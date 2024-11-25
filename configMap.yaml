@@ -1,0 +1,7 @@
+apiVersion : v1
+kind : ConfigMap
+metadata:
+  name : app-config
+  namespace: pranoj85-dev
+data:
+  appColor : red

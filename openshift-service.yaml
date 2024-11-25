@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myopenshiftdemo-svc
+  namespace: pranoj85-dev
+spec:
+  selector:
+    app: myopenshiftdemo-deployment
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: NodePort
